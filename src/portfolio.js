@@ -111,7 +111,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Northeastern University",
-      logo: require("./assets/images/Northeastern.jpg"),
+      logo: require("./assets/images/Northeastern.png"),
       subHeader: "Master of Science in Business Analytics",
       duration: "September 2023 - December 2024",
       desc: "Specialized in data analytics, predictive modeling, and business intelligence.",
