@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -11,11 +11,12 @@ import {
   blogSection,
   talkSection,
   achievementSection,
-  resumeSection
+  resumeSection,
+  educationInfo // Use educationInfo here
 } from "../../portfolio";
 
 function Header() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -23,6 +24,7 @@ function Header() {
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
+  const viewEducation = educationInfo.display; // Use educationInfo here
 
   return (
     <Headroom>
@@ -36,7 +38,7 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
@@ -46,11 +48,19 @@ function Header() {
               <a href="#skills">Skills</a>
             </li>
           )}
+          {viewEducation && ( // Add Education button here
+            <li>
+              <a href="#education">Education</a>
+            </li>
+          )}
           {viewExperience && (
             <li>
               <a href="#experience">Work Experiences</a>
             </li>
           )}
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
           {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>
@@ -80,7 +90,6 @@ function Header() {
             <a href="#contact">Contact Me</a>
           </li>
           <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>
               <ToggleSwitch />
             </a>
@@ -90,4 +99,5 @@ function Header() {
     </Headroom>
   );
 }
+
 export default Header;

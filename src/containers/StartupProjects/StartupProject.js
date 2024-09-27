@@ -5,14 +5,6 @@ import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
-  function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
@@ -43,21 +35,18 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="card-image"
-                      ></img>
-                    </div>
-                  ) : null}
                   <div className="project-detail">
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}
                     >
                       {project.projectName}
                     </h5>
+                    {/* Added "Skills:" label */}
+                    <p
+                      className={isDark ? "dark-mode card-skills" : "card-skills"}
+                    >
+                      <strong>Skills:</strong> {project.skills}
+                    </p>
                     <p
                       className={
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
@@ -65,23 +54,6 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
-                    {project.footerLink ? (
-                      <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    ) : null}
                   </div>
                 </div>
               );

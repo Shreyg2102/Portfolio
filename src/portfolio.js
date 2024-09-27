@@ -20,26 +20,24 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Shrey Gulati",
+  title: "Hi all, I'm Shrey",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Business Analyst 🔍 with experience in data-driven decision making, strategic insights, and process optimization, utilizing tools like Excel, SQL, Tableau, and Python to drive business success and uncover growth opportunities."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1WrQU01Ue4tf4a7eQB1hyWPdW_IJhM9gJ/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  linkedin: "https://www.linkedin.com/in/shreygulati/",
+  gmail: "gulati.shrey21@gmail.com",
+  instagram: "https://www.instagram.com/shrey.gulati/",
+  facebook: "https://www.facebook.com/shrey.gulati21",
+  twitter: "https://x.com/shrey_gulati",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +47,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "DEDICATED BUSINESS ANALYST DRIVEN BY DATA-INSPIRED DECISIONS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Analyze complex datasets to uncover actionable insights and drive business growth"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Create interactive dashboards using tools like Tableau, Power BI, and Excel"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Partner with teams to streamline operations, elevate productivity, and fuel strategic success"
     )
   ],
 
@@ -65,57 +63,43 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
+      skillName: "sql",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "tableau",
+      fontAwesomeClassname: "fas fa-chart-bar"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "power bi",
+      fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+      skillName: "excel",
+      fontAwesomeClassname: "far fa-file-excel"
+    },
+    {
+      skillName: "r-programming",
+      fontAwesomeClassname: "fab fa-r-project"
     },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      skillName: "jira",
+      fontAwesomeClassname: "fab fa-atlassian"
+    },
+    {
+      skillName: "confluence",
+      fontAwesomeClassname: "fab fa-confluence"
+    },
+    {
+      skillName: "alteryx",
+      fontAwesomeClassname: "fas fa-server"
+    },
+  
+  
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,23 +110,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Northeastern University",
+      logo: require("./assets/images/Northeastern.jpg"),
+      subHeader: "Master of Science in Business Analytics",
+      duration: "September 2023 - December 2024",
+      desc: "Specialized in data analytics, predictive modeling, and business intelligence.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Coursework: Statistical Analysis, Machine Learning, Predictive Modeling, Data Visualization",
+        "Leadership: Advisory Board Member, Graduate Career Center,D'Amore-McKim School of Business"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Amity University",
+      logo: require("./assets/images/Amity.png"),
+      subHeader: "Bachelor of Business Administration in International Business with Artificial Intelligence",
+      duration: "September 2020 - May 2023",
+      desc: "Graduated with a focus on utilizing Data Analytics, Business Intelligence and AI to drive innovative strategies in international business.",
+      descBullets: ["Research Assistant : Co-authored the paper 'Metaverse and Fintech: Pathway for Innovation and Development'"]
     }
   ]
 };
@@ -153,16 +137,28 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Data Analysis & Data Modelling", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "SQL & Databases",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Business Intelligence Tools (Tableau, Power BI)",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Statistical Analysis & Predictive Modeling",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Excel and Advanced Functions",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Project Management & Agile Methodologies",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +170,37 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Capstone Project- Business Analytics & Customer Segmentation",
+      company: "Linxup",
+      companylogo: require("./assets/images/linxup.png"),
+      date: "September 2024 – Present",
+      desc: "Leading segmentation analysis, churn analysis, and dashboard development to drive customer engagement and profitability.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Analyzing customer usage patterns and purchasing behavior using machine learning and clustering",
+        "Working to Deliver insights with interactive dashboards, improving customer engagement for 200,000+ fleet assets"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Project Manager Intern",
+      company: "Co-x3 Family Foundation",
+      companylogo: require("./assets/images/co-x3.png"),
+      date: "June 2024 – August 2024",
+      desc: "Managed cross-functional projects, optimizing processes and driving efficient project execution.",
+      descBullets: [
+        "Defined and tracked KPIs for cross-functional projects using Confluence",
+        "Increased project success rates by 30% through Agile practices and Jira"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Data Analytics using Deep Learning: Academic Intern",
+      company: "National University of Singapore & Hewlett Packard Enterprise",
+      companylogo: require("./assets/images/NUS3.png"),
+      date: "June 2022 – July 2022",
+      desc: "Developed machine learning models to analyze vulnerabilities in Captchas and led data-driven collaborations.",
+      descBullets: [
+        "Engineered a custom CNN model, achieving 95% accuracy in detecting text-based Captcha vulnerabilities",
+        "Collaborated with interdisciplinary teams to apply machine learning techniques for data-driven solutions"
+      ]
     }
   ]
 };
@@ -206,37 +210,54 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "A Collection of Personal and Academic Projects Showcasing My Skills and Expertise",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      projectName: "Data Transformation and Automation for IMDb",
+      skills: "Python, Pandas, Alteryx",
+      projectDesc: "Developed an automated pipeline for a movie streaming client to enrich their dataset using IMDb data. Scraped top 500 movies (2018-2020) and transformed the data into structured formats. Integrated IMDb data with the client’s dataset to deliver enriched insights. Automated the entire process in Alteryx, including data cleansing, merging, and reformatting, creating a streamlined workflow for future transformations."
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+      projectName: "Sentiment Analysis & Product Recommendations for Amazon",
+      skills: "Python, NLTK, Machine Learning, Sentiment Analysis, Regression Models",
+      projectDesc: "Developed a machine learning pipeline to analyze customer sentiment on Amazon reviews, linking satisfaction to pricing strategies. The ensemble model achieved a significant improvement, reducing prediction errors (RMSE = 0.152) and enhancing discount decision accuracy by 85%. This helps e-commerce sellers refine promotions, leading to increased customer satisfaction and profitability."
+    },
+    {
+      projectName: "Aid Across Borders: Analyzing U.S. Defense Aid and Military Support",
+      skills: "Tableau, Python, Data Visualization, Data Analysis, Geopolitical Strategies",
+      projectDesc: "Explored how the U.S. channels defense funds to provide aid across regions, focusing on the Middle East. Analyzed trends in Foreign Military Sales (FMS) and grants, revealing key geopolitical strategies and military equipment distributions. Insights into U.S. defense aid highlighted how tailored military support aligns with regional needs, driving foreign policy and security strategies."
+    },
+    {
+      projectName: "Enhancing Influencer Marketing on Twitter",
+      skills: "Python, Data Mining, Social Media Analytics, Machine Learning",
+      projectDesc: "Developed a new metric, Information Spreadability (IS), to assess true influence beyond follower count. Analyzed Twitter tech influencers by IS, showing that influencers with high engagement significantly outperform those chosen by follower count alone. The project highlighted the importance of genuine engagement in influencer marketing strategies, helping tech companies better target their campaigns and maximize outreach."
+    },
+    {
+      projectName: "Assortment Planning in Fashion Retail",
+      skills: "Python, Heuristics, Data Modelling, Operations Research",
+      projectDesc: "Developed an optimization model for assortment planning in fashion retail, addressing demand estimation, product mix selection, and cost constraints. Implemented a two-phase heuristic solution, achieving a less than 1% gap from the upper bound across 240 datasets. Applied the model to a real-world retailer, optimizing product assortment for a women's dress catalog, leading to more informed inventory and budget decisions."
+    },
+    {
+      projectName: "Optimizing Product Placement in Retail with Data Mining",
+      skills: "Machine Learning, Algorithms, Python",
+      projectDesc: "Developed a product assignment model using association rule mining to enhance cross-selling in retail environments. Implemented the nearest neighbor method for optimal product placement, resulting in a 37% increase in sales potential. Iteratively updated the model based on real-time sales data, achieving an additional 18% boost in cross-selling opportunities. This project highlights the value of data-driven retail strategies for maximizing sales."
+    },
+    {
+      projectName: "Remote Work Impact on Productivity & Work-Life Balance",
+      skills: "R, Statistical Modelling, Data Analysis, Survey Research",
+      projectDesc: "Conducted empirical research on remote work's effect on employee productivity and work-life balance in the tech industry. Utilized survey data and performed polynomial regression to explore non-linear relationships between remote work hours and key outcomes. Results indicated that moderate levels of remote work optimized productivity and work-life balance, while excessive remote work led to diminishing returns. The findings contribute to shaping flexible, employee-friendly remote work policies."
+    },
+    {
+      projectName: "Product Assignment Optimization in Warehouse",
+      skills: "Genetic Algorithm (GA), Linear Programming (LP), Gurobi, Data Modelling, Optimization",
+      projectDesc: "Optimized warehouse layout by strategically assigning products to minimize handling time and improve storage efficiency. Integrated GA for diverse initial layouts, refined using LP for global optimality under operational constraints. Analyzed historical product-picking data to reduce travel distance and enhance productivity. The solution demonstrated significant reductions in operational costs and improved inventory management, paving the way for further research in dynamic warehouse optimization with real-time data."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -300,7 +321,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +345,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +364,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +377,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -365,6 +386,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
+  
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -372,18 +394,18 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+1 617-580-7220",
+  email_address: "gulati.shrey21@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "shrey_gulati", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
