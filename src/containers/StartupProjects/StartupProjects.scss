@@ -5,11 +5,6 @@
   grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
   gap: 1.5rem; /* Adjust gap between the cards */
 }
-@media (max-width: 700px) {
-  .projects-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 .project-detail {
   padding: 15px 0;
   text-align: center;
